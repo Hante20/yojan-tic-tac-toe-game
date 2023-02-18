@@ -1,0 +1,168 @@
+
+body{
+  background-color: #20262E;
+
+} 
+.intro{
+  background-color: rgb(232, 232, 232);
+  font-family: 'Audiowide', cursive;
+  color: #20262E;
+  position: absolute;
+  z-index: 1;
+
+}
+.intro-text{
+  padding: 3rem;
+  font-size: 4rem;
+  padding-bottom: 10rem;
+}
+.btn{
+  margin: 1rem 0rem 0rem 0rem;
+}
+.mode
+{
+  /* background-color: blue; */
+  font-family: 'Audiowide', cursive;
+  margin: 1rem 1rem 7rem 1rem;
+  font-size: 1.5rem;
+}
+.mode-btn{
+  margin: 0;
+}
+.inner-text
+{
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.invisible{
+  visibility: hidden;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.tic-tac-toe{
+  width: 25%;
+  margin: 6.25rem 0 0 400px ;
+  display: inline-block
+  
+ }
+
+ .cell {
+    width: 10%;
+    height: 5%;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    flex-basis: 100px;
+    flex-shrink: 0;
+}
+.last{
+  border-right: none;
+  border-bottom: 4px solid white;
+}
+.last-row
+{
+  border-bottom: none;
+  border-right: 4px solid white;
+}
+.last-cell
+{
+  border: none;
+}
+.cell:hover{
+   background-color: #252b32;
+}
+.disps{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Audiowide', cursive;
+    font-size: 2.8rem;
+    font-weight: 600;
+  color: rgb(83, 140, 180);
+  
+  display: inline-block;
+  position: relative;
+  bottom: 13rem;
+  left: 10rem;
+}
+.player{
+  display: block;
+}
+.player1
+{
+  color: #FCE22A;
+}
+.player2
+{
+  color: #30E3DF;
+}
+
+.stats{
+  margin-top: 1.2rem;
+}
+
+.inactive
+{
+  opacity: 0.1;
+}
+
+.remove {
+  animation: slideaway 500ms ease-in-out;
+  display: none;
+}
+
+@keyframes slideaway {
+  from { display: block; }
+  to { transform: translateY(40px); opacity: 0;}
+}
+
+
+
+@media (max-width: 600px) {
+  .tic-tac-toe{
+    margin: 70px 30px 16px 65px;
+    width: 350px;
+
+  }
+  .cell{
+    width: 50px;
+    height: 2%;
+    font-size: 4rem;
+  }
+  .disps{
+    /* display: block; */
+    bottom: 0;
+    left: 42px;
+    font-size: 2rem;
+    color: white; 
+  }
+  .player{
+    display: inline-block;
+    margin: 10px 30px 10px 0;
+  }
+  .stats{
+    width: 275px;
+    text-align: center;
+    margin: 0 0 0 60px;
+  }
+  .btn{
+    margin: 1rem 0 0 0;
+  }
+  .intro{
+    padding-bottom: 7rem;
+  }
+  .intro-text{
+    padding-bottom: 7rem;
+  }
+  
+}
+   
