@@ -102,7 +102,7 @@ function gameStart() {
                     playSound();
                 },300);
               checkWin();
-            }, 200);
+            }, 500);
             // console.log(cell[emptyCells[x]]);
           }
           // console.log(emptyCells);
@@ -175,7 +175,7 @@ function gameStart() {
 
               // console.log(turn);
             }
-          }, 300);
+          }, 500);
         }
 
         // console.log(tie);
@@ -244,7 +244,7 @@ function botGameRestart() {
             },300);
               
             checkWin();
-          }, 200);
+          }, 500);
         }
         // console.log(emptyCells);
         // console.log(turn);
@@ -319,7 +319,7 @@ function geniusBotGameRestart() {
 
           // console.log(turn);
         }
-      }, 300);
+      }, 500);
     }
 
     // console.log(tie);
