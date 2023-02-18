@@ -100,7 +100,7 @@ function gameStart() {
                 player2;
                 setTimeout(function(){
                     playSound();
-                },300);
+                },200);
               checkWin();
             }, 500);
             // console.log(cell[emptyCells[x]]);
@@ -153,7 +153,7 @@ function gameStart() {
               turn--;
               setTimeout(function(){
                 playSound();
-            },300);
+            },200);
               checkWin();
               checkTie(tie);
             } else {
@@ -169,7 +169,7 @@ function gameStart() {
                 document.querySelectorAll(".cell")[nextMove].innerHTML = player2;
                 setTimeout(function(){
                     playSound();
-                },300);
+                },200);
               checkWin();
               checkTie(tie);
 
@@ -241,7 +241,7 @@ function botGameRestart() {
               player2;
               setTimeout(function(){
                 playSound();
-            },300);
+            },200);
               
             checkWin();
           }, 500);
@@ -297,7 +297,7 @@ function geniusBotGameRestart() {
           turn--;
           setTimeout(function(){
             playSound();
-        },300);
+        },200);
           checkWin();
           checkTie(tie);
         } else {
@@ -313,7 +313,7 @@ function geniusBotGameRestart() {
           document.querySelectorAll(".cell")[nextMove].innerHTML = player2;
           setTimeout(function(){
             playSound();
-        },300);
+        },200);
           checkWin();
           checkTie(tie);
 
