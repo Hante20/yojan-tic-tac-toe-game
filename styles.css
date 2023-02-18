@@ -129,7 +129,7 @@ body{
 
 @media (max-width: 600px) {
   .tic-tac-toe{
-    margin: 70px 30px 16px 65px;
+    margin: 70px 30px 16px 50px;
     width: 320px;
 
   }
@@ -141,9 +141,10 @@ body{
   .disps{
     /* display: block; */
     bottom: 0;
-    left: 30px;
+    left: 25px;
     font-size: 2rem;
     color: white; 
+    width: 415px;
   }
   .player{
     display: inline-block;
@@ -159,7 +160,7 @@ body{
   }
   .intro{
     padding-bottom: 7rem;
-    width: 100%;
+    width: auto;
   }
   .intro-text{
     padding-bottom: 7rem;
