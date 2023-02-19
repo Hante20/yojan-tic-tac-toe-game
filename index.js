@@ -663,6 +663,7 @@ function swapPlayers() {
     player1 = player2;
     player2 = temp;
   }
+  $(".tic-tac-toe").addClass("inactive");
   restart();
 }
 
@@ -672,8 +673,13 @@ function restart() {
     for (let i = 0; i < 9; i++) {
       document.querySelectorAll(".cell")[i].innerHTML = "<p>" + i + "</p>";
       $(".cell p").addClass("invisible");
-      $(".player1").text(player1);
-      $(".player2").text(player2);
+      if(twoPlayerMode)
+      {
+        $(".player1").text(player1);
+        $(".player2").text(player2);
+      }
+      
+      $(".tic-tac-toe").removeClass("inactive");
     }
   }, 2000);
   turn = 0;
